@@ -1,0 +1,57 @@
+html, body {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4em;
+}
+
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+
+p {
+    font-weight: 400;
+    text-indent: 2em;
+}
+
+.intro {
+    text-indent: 2em;
+}
+
+.sentence {
+    font-style: italic;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+address {
+    text-align: center;
+}
+
+address a {
+    font-size: 1.25em;
+    color: #4F3674;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+    background-color: #D6A800;
+}
+
+address a:visited {
+    color: #8A2BE2; /* Example of a visited pseudo-class style */
+}

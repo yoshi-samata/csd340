@@ -1,0 +1,25 @@
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3, h4 {
+    background-color: #f0f0f0; /* Choose a color that fits your scheme */
+    color: #333; /* Font color */
+    border: 1px solid #D6A800;
+    padding: 10px;
+}
+
+a {
+    color: #4F3674; /* Choose a color that fits your scheme */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #D6A800; /* Choose a color that fits your scheme */
+}
+
+a:visited {
+    color: #8A2BE2; /* Choose a color that fits your scheme */
+}

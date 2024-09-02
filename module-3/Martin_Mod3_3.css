@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    width: 45%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#left-div, #right-div {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+ol, ul {
+    font-weight: 300;
+}
+
+ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    list-style-type: upper-roman;
+    
+}
+
+ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+
+}
+
+#bottom-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px;
+}
+
+#bottom-div a {
+    text-decoration: none;
+}
+
+#bottom-div a:hover {
+    text-decoration: underline;
+}

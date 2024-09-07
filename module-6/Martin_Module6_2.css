@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Select an appropriate background color */
+    color: white; /* Set text color to white */
+    padding: 20px; /* Give the element a padding of 20px */
+    text-align: center; /* Center the text */
+}
+
+h1 {
+    font-weight: 400; /* Set the weight to 400 */
+}
+
+/* Navbar Styles */
+#navbar {
+    overflow: hidden; /* Set the overflow to hidden */
+    background-color: #333; /* Select an appropriate background color */
+    border-bottom: 15px solid #4CAF50; /* Set the bottom border to a solid 15px */
+}
+
+#navbar a {
+    float: left; /* Float the text to the left */
+    display: block; /* Set the display to block */
+    color: white; /* Set the color to white or another appropriate color */
+    text-align: center; /* Center the text */
+    padding: 14px 16px; /* Give it a padding of “14px 16px” */
+    text-decoration: none; /* Remove the underline */
+}
+
+#navbar a:hover {
+    background-color: #ddd; /* Select an appropriate background color */
+    color: black; /* Set color to an appropriate color */
+}
+
+/* Container Styles */
+#container {
+    margin-top: 2%; /* Set the top margin to 2% */
+    margin-left: 5%; /* Set the left margin to 5% */
+    margin-right: 5%; /* Set the right margin to 5% */
+    padding: 10px; /* Give the container a padding of 10px */
+}
+
+/*Card styles */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Set the box shadow */
+    transition: 0.3s; /* Set the transition */
+    width: 50%; /* Set the width to 50% */
+    margin: auto; /* Center the card */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Set hover effect on card */
+}
+
+.card-title {
+    text-align: center; /* Center the text */
+    font-size: 2em; /* Set the font-size to 2em */
+    color: #333; /* Select an appropriate color */
+    font-weight: 400; /* Set the weight to 400 */
+}
+
+.card-content {
+    padding: 2px 16px; /* Set the padding */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50; /* Set the background color to match header */
+    position: absolute; /* Set position to absolute */
+    bottom: 0; /* Set the bottom to 0 */
+    width: 100%; /* Give it a width of 100% */
+}
+
+footer p {
+    color: white; /* Set the color */
+    font-weight: 400; /* Set the weight */
+    float: right; /* Float the text to the right */
+    padding-right: 10px; /* Give it a right padding of 10px */
+    font-style: italic; /* Set the font-style to italic */
+}
+
+footer a {
+    text-decoration: none; /* Remove the underline */
+    color: white; /* Set the color */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline the text on hover */
+}

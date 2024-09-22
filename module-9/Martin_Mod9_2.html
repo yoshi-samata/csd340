@@ -1,0 +1,41 @@
+<!-- Joshua Martin
+    Module 9.3
+    HTML + CSS Web Development CSD340
+    09/21/24-->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSD 340 Web Development with HTML and CSS</title>
+    
+        <!-- My JavaScript Variables -->
+        <script>
+            var word1 = "dedicated";
+            var word2 = "fullest";
+            var word3 = "idea's";
+        </script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        </header>
+    
+        <!-- Paragraph about me with Span Tags -->
+        <p>I am a <span id="span1">_________</span> gamer addict.</p>
+        <p>I believe to live your life at the <span id="span2">_________</span> and to pursue happiness at all costs.</p>
+        <p>Tomorrow is a new day to explore new <span id="span3">_________</span>.</p>
+    
+        <!-- Buttons to make words pop up for span tags -->
+        <p>
+            <button type="button" onclick="document.getElementById('span1').innerHTML = word1">show Word 1 in sentence 1</button>
+            <button type="button" onclick="document.getElementById('span2').innerHTML = word2">show Word in sentence 2</button>
+            <button type="button" onclick="document.getElementById('span3').innerHTML = word3">show Word in sentence 3</button>
+        </p>
+    
+    </body>
+    </html>
+    

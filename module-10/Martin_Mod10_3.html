@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'
+  'http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd'>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title>Images to click on!</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: rgb(247, 190, 86);
+      }
+      .thumbnail {
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+        cursor: pointer;
+        filter: grayscale(100%);
+        transition: filter 0.5s ease;
+      }
+      .color-image {
+        filter: none;
+      }
+      .caption {
+        font-weight: bold;
+      }
+    </style>
+    <script>
+      function ChangeImageColor(imageElement) {
+        if (imageElement.classList.contains("color-image")) {
+          imageElement.classList.remove("color-image");
+        } else {
+          imageElement.classList.add("color-image");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Click an Image to change its color scheme!</h2>
+
+    <div class="image-container">
+      <img src="sasuke.jpg" alt="Sasuke Uchiha" class="thumbnail"
+          onclick="ChangeImageColor(this)">
+      <div class="caption">Sasuke Uchiha</div>
+    </div>
+
+    <div class="image-container">
+      <img src="Naruto.jpg" alt="Naruto Uzamaki" class="thumbnail"
+          onclick="ChangeImageColor(this)"">
+      <div class="caption">Naruto Uzamaki</div>
+    </div>
+
+    <div class="image-container">
+      <img src="Pain.jpg" alt="Pain" class="thumbnail"
+        onclick="ChangeImageColor(this)"">
+      <div class="caption">Pain</div>
+    </div>
+
+    <br>
+
+    
+
+  </body>
+</html>

@@ -10,7 +10,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CSD 340 Web Development with HTML and CSS</title>
-    
+        <style>
+             footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #1d3557;
+            color: white;
+        }
+
+        footer a {
+            color: #a8dadc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #f1faee;
+        }
+        </style>
         <!-- My JavaScript Variables -->
         <script>
             var word1 = "dedicated";
@@ -35,6 +52,10 @@
             <button type="button" onclick="document.getElementById('span2').innerHTML = word2">show Word in sentence 2</button>
             <button type="button" onclick="document.getElementById('span3').innerHTML = word3">show Word in sentence 3</button>
         </p>
+
+        <footer>
+            <p>Back to <a href="../index.html">Landing Page</a></p>
+        </footer>
     
     </body>
     </html>

@@ -1,0 +1,149 @@
+<!--Josh Martin
+10/6/24
+Chandra Bobba
+Assignment 12.2-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .box {
+            border: 2px dashed red;
+            padding: 20px;
+            width: 40%;
+            background-color: #fff;
+        }
+
+        h2 {
+            color: #444;
+        }
+
+        button {
+            padding: 10px;
+            margin-right: 10px;
+            background-color: #e0e0e0;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ccc;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        ul {
+            list-style-type: upper-roman;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #1d3557;
+            color: white;
+        }
+
+        footer a {
+            color: #a8dadc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #f1faee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>
+
+    <div class="container">
+        <div class="box">
+            <h2>Top 10 Favorite Books</h2>
+            <button onclick="sortBooks(true)">Top to Bottom</button>
+            <button onclick="sortBooks(false)">Bottom to Top</button>
+            <ol id="book-list">
+                <li>A Game of Thrones</li>
+                <li>The Hobbit</li>
+                <li>12 Rules for Life</li>
+                <li>The Fellowship of the Ring</li>
+                <li>The Two Towers</li>
+                <li>The Return of the King</li>
+                <li>The Adventures of Tom Bombadil</li>
+                <li>The Silmarillion</li>
+                <li>The Children of Húrin</li>
+                <li>A Clash of Kings</li>
+            </ol>
+        </div>
+
+        <div class="box">
+            <h2>5 Things I've Learned Since the Course Started</h2>
+            <ul>
+                <li>I learned how to write HTML Code</li>
+                <li>I learned how to correctly style CSS</li>
+                <li>I learned the basics of JavaScript</li>
+                <li>I learned a lot about responsive design</li>
+                <li>I learned how to use GIT and github </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Back to <a href="../index.html">Landing Page</a></p>
+    </footer>
+
+    <script>
+        const books = [
+            "A Game of Thrones",
+            "The Hobbit",
+            "12 Rules for Life",
+            "The Fellowship of the Ring",
+            "The Two Towers",
+            "The Return of the King",
+            "The Adventures of Tom Bombadil",
+            "The Silmarillion",
+            "The Children of Húrin",
+            "A Clash of Kings"
+        ];
+
+        function sortBooks(ascending) {
+            const list = document.getElementById('book-list');
+            list.innerHTML = '';
+
+            const sortedBooks = ascending ? books : [...books].reverse();
+            sortedBooks.forEach(book => {
+                const listItem = document.createElement('li');
+                listItem.textContent = book;
+                list.appendChild(listItem);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
